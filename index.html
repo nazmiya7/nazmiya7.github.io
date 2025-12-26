@@ -3,94 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Nazmiya A S - Backend Developer specializing in Golang, Microservices, and RESTful APIs. Based in Dubai, UAE."/>
+  <meta name="keywords" content="Backend Developer, Golang, Microservices, RESTful APIs, Dubai, Software Engineer"/>
+  <meta name="author" content="Nazmiya A S"/>
+  
   <title>Nazmiya A S | Backend Developer (Golang)</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      background: #ffffff;
-    }
-    header {
-      text-align: center;
-      padding-bottom: 20px;
-    }
-    header h1 {
-      margin-bottom: 5px;
-    }
-    header p {
-      font-size: 18px;
-      color: #555;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 16px;
-      background: #0073e6;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 14px;
-    }
-    .btn:hover {
-      background: #005bb5;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 25px 0;
-    }
-    h2 {
-      color: #222;
-      margin-bottom: 10px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .job-title {
-      font-weight: bold;
-    }
-    .job-duration {
-      font-style: italic;
-      color: #666;
-      font-size: 14px;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-      margin-top: 30px;
-    }
-    a {
-      color: #0073e6;
-      text-decoration: none;
-    }
-  </style>
+  
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⭐</text></svg>">
 </head>
 
 <body>
-  <div class="container">
+  <!-- Animated Starry Background -->
+  <canvas id="starry-background"></canvas>
 
+  <div class="container">
+    
     <!-- HEADER -->
     <header>
       <h1>Nazmiya A S</h1>
-      <p>Backend Developer | Golang | Microservices</p>
-      <p>Dubai, UAE</p>
+      <p class="subtitle">Backend Developer | Golang | Microservices</p>
+      <p class="location">Dubai, UAE</p>
       <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
     </header>
 
-    <hr />
-
-    <!-- SUMMARY -->
-    <section>
+    <!-- PROFESSIONAL SUMMARY -->
+    <section class="glass-section fade-in">
       <h2>Professional Summary</h2>
       <p>
         Backend Developer with 2.7+ years of experience in designing and developing
@@ -101,83 +42,122 @@
       </p>
     </section>
 
-    <hr />
-
-    <!-- SKILLS -->
-    <section>
+    <!-- TECHNICAL SKILLS -->
+    <section class="glass-section fade-in">
       <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Golang, Python, SQL, C, JavaScript</li>
-        <li><strong>Frameworks:</strong> Gin, Flask, Vue.js</li>
-        <li><strong>Databases:</strong> PostgreSQL, MySQL, Redis, SQLite</li>
-        <li><strong>Backend:</strong> RESTful APIs, Microservices, AI Integration</li>
-        <li><strong>DevOps & Tools:</strong> Docker, Git, GitHub, Linux, Postman, Jira</li>
-        <li><strong>Concepts:</strong> Performance Optimization, Caching, Concurrency (Goroutines)</li>
-        <li><strong>Security:</strong> OAuth2, JWT Authentication</li>
-      </ul>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <strong>Languages:</strong> Golang, Python, SQL, C, JavaScript
+        </div>
+        <div class="skill-category">
+          <strong>Frameworks:</strong> Gin, Flask, Vue.js
+        </div>
+        <div class="skill-category">
+          <strong>Databases:</strong> PostgreSQL, MySQL, Redis, SQLite
+        </div>
+        <div class="skill-category">
+          <strong>Backend:</strong> RESTful APIs, Microservices, AI Integration
+        </div>
+        <div class="skill-category">
+          <strong>DevOps & Tools:</strong> Docker, Git, GitHub, Linux, Postman, Jira
+        </div>
+        <div class="skill-category">
+          <strong>Concepts:</strong> Performance Optimization, Caching, Concurrency (Goroutines)
+        </div>
+        <div class="skill-category">
+          <strong>Security:</strong> OAuth2, JWT Authentication
+        </div>
+      </div>
     </section>
 
-    <hr />
+    <!-- MY GOALS / TO-DO LIST -->
+    <section class="glass-section fade-in">
+      <h2>My Professional Goals</h2>
+      <p>Track my career objectives and learning goals:</p>
+      
+      <div class="todo-container">
+        <div class="todo-input-wrapper">
+          <input 
+            type="text" 
+            id="todo-input" 
+            placeholder="Add a new goal or task..."
+            aria-label="New goal input"
+          />
+          <button id="add-todo-btn" aria-label="Add goal">Add Goal</button>
+        </div>
+        
+        <ul id="todo-list">
+          <li class="empty-state">No goals yet. Add your first goal above! ⭐</li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- EXPERIENCE -->
-    <section>
+    <!-- WORK EXPERIENCE -->
+    <section class="glass-section fade-in">
       <h2>Work Experience</h2>
 
-      <p class="job-title">Backend Developer – KUSHMAND.AI (Remote, HQ: San Diego)</p>
-      <p class="job-duration">January 2023 – Present</p>
-      <ul>
-        <li>Architected, developed, and maintained backend systems for SaaS and AI-based products using Golang</li>
-        <li>Designed RESTful APIs and implemented Redis caching, reducing API response time by 40%</li>
-        <li>Optimized complex SQL queries and database structures supporting 1K+ daily active users</li>
-        <li>Integrated third-party services including payment gateways and analytics platforms</li>
-        <li>Built secure, scalable APIs capable of handling high-concurrency workloads</li>
-        <li>Contributed to CI/CD pipelines using Docker, achieving 99.9% application uptime</li>
-      </ul>
+      <div>
+        <p class="job-title">Backend Developer – KUSHMAND.AI (Remote, HQ: San Diego)</p>
+        <p class="job-duration">January 2023 – Present</p>
+        <ul>
+          <li>Architected, developed, and maintained backend systems for SaaS and AI-based products using Golang</li>
+          <li>Designed RESTful APIs and implemented Redis caching, reducing API response time by 40%</li>
+          <li>Optimized complex SQL queries and database structures supporting 1K+ daily active users</li>
+          <li>Integrated third-party services including payment gateways and analytics platforms</li>
+          <li>Built secure, scalable APIs capable of handling high-concurrency workloads</li>
+          <li>Contributed to CI/CD pipelines using Docker, achieving 99.9% application uptime</li>
+        </ul>
+      </div>
     </section>
 
-    <hr />
-
-    <!-- PROJECTS -->
-    <section>
+    <!-- KEY PROJECTS -->
+    <section class="glass-section fade-in">
       <h2>Key Projects</h2>
 
-      <p class="job-title">ARIES – Next-Generation Stock Screening Platform</p>
-      <ul>
-        <li>Led backend development for a patented stock screening SaaS product</li>
-        <li>Designed REST APIs to deliver stock insights, trends, and visual analytics</li>
-        <li>Integrated external financial data sources with secure and scalable backend systems</li>
-      </ul>
+      <div>
+        <p class="job-title">ARIES – Next-Generation Stock Screening Platform</p>
+        <ul>
+          <li>Led backend development for a patented stock screening SaaS product</li>
+          <li>Designed REST APIs to deliver stock insights, trends, and visual analytics</li>
+          <li>Integrated external financial data sources with secure and scalable backend systems</li>
+        </ul>
+      </div>
 
-      <p class="job-title">My Lucky Days (MLD) – Hyper-Personalized Astrology Platform</p>
-      <ul>
-        <li>Developed backend APIs for Vedic astrology predictions and user journaling features</li>
-        <li>Engineered time-based data models and optimized SQL views for dynamic content</li>
-        <li>Integrated Google Gemini AI for generating personalized astrology outputs</li>
-      </ul>
+      <div>
+        <p class="job-title">My Lucky Days (MLD) – Hyper-Personalized Astrology Platform</p>
+        <ul>
+          <li>Developed backend APIs for Vedic astrology predictions and user journaling features</li>
+          <li>Engineered time-based data models and optimized SQL views for dynamic content</li>
+          <li>Integrated Google Gemini AI for generating personalized astrology outputs</li>
+        </ul>
+      </div>
 
-      <p class="job-title">Wiki Bedtime Stories (WBS) – Digital Storytelling Platform</p>
-      <ul>
-        <li>Built and optimized APIs for personalized audio and text-based bedtime stories</li>
-        <li>Improved performance and user experience through backend tuning</li>
-      </ul>
+      <div>
+        <p class="job-title">Wiki Bedtime Stories (WBS) – Digital Storytelling Platform</p>
+        <ul>
+          <li>Built and optimized APIs for personalized audio and text-based bedtime stories</li>
+          <li>Improved performance and user experience through backend tuning</li>
+        </ul>
+      </div>
     </section>
-
-    <hr />
 
     <!-- EDUCATION -->
-    <section>
+    <section class="glass-section fade-in">
       <h2>Education</h2>
-      <p><strong>Master of Computer Applications (MCA)</strong> – University of Calicut (2022)</p>
-      <p>CGPA: 8.06</p>
+      
+      <div>
+        <p><strong>Master of Computer Applications (MCA)</strong> – University of Calicut (2022)</p>
+        <p>CGPA: 8.06</p>
+      </div>
 
-      <p><strong>Bachelor of Science in Mathematics</strong> – University of Calicut (2020)</p>
-      <p>Score: 82.45%</p>
+      <div class="mt-lg">
+        <p><strong>Bachelor of Science in Mathematics</strong> – University of Calicut (2020)</p>
+        <p>Score: 82.45%</p>
+      </div>
     </section>
 
-    <hr />
-
-    <!-- ADDITIONAL INFO -->
-    <section>
+    <!-- ADDITIONAL INFORMATION -->
+    <section class="glass-section fade-in">
       <h2>Additional Information</h2>
       <ul>
         <li>Currently based in Dubai, UAE</li>
@@ -187,22 +167,24 @@
       </ul>
     </section>
 
-    <hr />
-
     <!-- CONTACT -->
-    <section>
+    <section class="glass-section fade-in">
       <h2>Contact</h2>
-      <p>Email: nazmiyaas@gmail.com</p>
+      <p><strong>Email:</strong> nazmiyaas@gmail.com</p>
       <p>
-        GitHub: <a href="https://github.com/nazmiya7" target="_blank">github.com/nazmiya7</a><br />
-        LinkedIn: <a href="https://www.linkedin.com/in/nazmiya" target="_blank">linkedin.com/in/nazmiya</a>
+        <strong>GitHub:</strong> <a href="https://github.com/nazmiya7" target="_blank" rel="noopener noreferrer">github.com/nazmiya7</a><br />
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nazmiya" target="_blank" rel="noopener noreferrer">linkedin.com/in/nazmiya</a>
       </p>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-      © 2025 Nazmiya A S
+      <p>© 2025 Nazmiya A S | Made with ⭐ and code</p>
     </footer>
 
   </div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
