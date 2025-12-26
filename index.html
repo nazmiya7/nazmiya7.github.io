@@ -3,128 +3,206 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nazmiya AS | Backend Developer</title>
+  <title>Nazmiya A S | Backend Developer (Golang)</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f7f7f7;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
       color: #333;
+      line-height: 1.6;
     }
     .container {
       max-width: 900px;
       margin: auto;
       padding: 20px;
-      background: #fff;
+      background: #ffffff;
     }
-    h1, h2 {
-      color: #222;
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    header h1 {
+      margin-bottom: 5px;
+    }
+    header p {
+      font-size: 18px;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: #0073e6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .btn:hover {
+      background: #005bb5;
     }
     hr {
       border: none;
       border-top: 1px solid #ddd;
-      margin: 20px 0;
+      margin: 25px 0;
+    }
+    h2 {
+      color: #222;
+      margin-bottom: 10px;
     }
     ul {
       padding-left: 20px;
+    }
+    .job-title {
+      font-weight: bold;
+    }
+    .job-duration {
+      font-style: italic;
+      color: #666;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-top: 30px;
     }
     a {
       color: #0073e6;
       text-decoration: none;
     }
-    .header {
-      text-align: center;
-    }
-    .header p {
-      font-size: 18px;
-      margin-top: -10px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 15px;
-      background: #0073e6;
-      color: #fff;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    .btn:hover {
-      background: #005bb5;
-    }
   </style>
 </head>
+
 <body>
+  <div class="container">
 
-<div class="container">
+    <!-- HEADER -->
+    <header>
+      <h1>Nazmiya A S</h1>
+      <p>Backend Developer | Golang | Microservices</p>
+      <p>Dubai, UAE</p>
+      <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
+    </header>
 
-  <!-- Header -->
-  <div class="header">
-    <h1>Nazmiya AS</h1>
-    <p>Backend Developer | Go & Python</p>
-    <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
+    <hr />
+
+    <!-- SUMMARY -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Backend Developer with 2.7+ years of experience in designing and developing
+        scalable RESTful APIs, AI-integrated systems, and high-performance backend
+        services using Golang. Strong expertise in database optimization, Redis caching,
+        concurrency handling with Goroutines, and microservices architecture.
+        Currently based in Dubai with a transferable dependent visa.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Golang, Python, SQL, C, JavaScript</li>
+        <li><strong>Frameworks:</strong> Gin, Flask, Vue.js</li>
+        <li><strong>Databases:</strong> PostgreSQL, MySQL, Redis, SQLite</li>
+        <li><strong>Backend:</strong> RESTful APIs, Microservices, AI Integration</li>
+        <li><strong>DevOps & Tools:</strong> Docker, Git, GitHub, Linux, Postman, Jira</li>
+        <li><strong>Concepts:</strong> Performance Optimization, Caching, Concurrency (Goroutines)</li>
+        <li><strong>Security:</strong> OAuth2, JWT Authentication</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Work Experience</h2>
+
+      <p class="job-title">Backend Developer – KUSHMAND.AI (Remote, HQ: San Diego)</p>
+      <p class="job-duration">January 2023 – Present</p>
+      <ul>
+        <li>Architected, developed, and maintained backend systems for SaaS and AI-based products using Golang</li>
+        <li>Designed RESTful APIs and implemented Redis caching, reducing API response time by 40%</li>
+        <li>Optimized complex SQL queries and database structures supporting 1K+ daily active users</li>
+        <li>Integrated third-party services including payment gateways and analytics platforms</li>
+        <li>Built secure, scalable APIs capable of handling high-concurrency workloads</li>
+        <li>Contributed to CI/CD pipelines using Docker, achieving 99.9% application uptime</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- PROJECTS -->
+    <section>
+      <h2>Key Projects</h2>
+
+      <p class="job-title">ARIES – Next-Generation Stock Screening Platform</p>
+      <ul>
+        <li>Led backend development for a patented stock screening SaaS product</li>
+        <li>Designed REST APIs to deliver stock insights, trends, and visual analytics</li>
+        <li>Integrated external financial data sources with secure and scalable backend systems</li>
+      </ul>
+
+      <p class="job-title">My Lucky Days (MLD) – Hyper-Personalized Astrology Platform</p>
+      <ul>
+        <li>Developed backend APIs for Vedic astrology predictions and user journaling features</li>
+        <li>Engineered time-based data models and optimized SQL views for dynamic content</li>
+        <li>Integrated Google Gemini AI for generating personalized astrology outputs</li>
+      </ul>
+
+      <p class="job-title">Wiki Bedtime Stories (WBS) – Digital Storytelling Platform</p>
+      <ul>
+        <li>Built and optimized APIs for personalized audio and text-based bedtime stories</li>
+        <li>Improved performance and user experience through backend tuning</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+      <p><strong>Master of Computer Applications (MCA)</strong> – University of Calicut (2022)</p>
+      <p>CGPA: 8.06</p>
+
+      <p><strong>Bachelor of Science in Mathematics</strong> – University of Calicut (2020)</p>
+      <p>Score: 82.45%</p>
+    </section>
+
+    <hr />
+
+    <!-- ADDITIONAL INFO -->
+    <section>
+      <h2>Additional Information</h2>
+      <ul>
+        <li>Currently based in Dubai, UAE</li>
+        <li>Visa Status: Dependent Visa (Transferable)</li>
+        <li>Developed a Flask + MySQL web application for a local Panchayat portal</li>
+        <li>Interest in Data Analytics</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- CONTACT -->
+    <section>
+      <h2>Contact</h2>
+      <p>Email: nazmiyaas@gmail.com</p>
+      <p>
+        GitHub: <a href="https://github.com/nazmiya7" target="_blank">github.com/nazmiya7</a><br />
+        LinkedIn: <a href="https://www.linkedin.com/in/nazmiya" target="_blank">linkedin.com/in/nazmiya</a>
+      </p>
+    </section>
+
+    <footer>
+      © 2025 Nazmiya A S
+    </footer>
+
   </div>
-
-  <hr/>
-
-  <!-- Summary -->
-  <h2>Professional Summary</h2>
-  <p>
-    Backend Developer with 3+ years of experience building scalable APIs,
-    working with Go, Python, SQL databases, and cloud-based systems.
-    Actively seeking backend opportunities in Dubai.
-  </p>
-
-  <hr/>
-
-  <!-- Skills -->
-  <h2>Skills</h2>
-  <ul>
-    <li><strong>Languages:</strong> Go, Python, SQL</li>
-    <li><strong>Backend:</strong> REST APIs, Microservices</li>
-    <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
-    <li><strong>Tools:</strong> Git, Docker</li>
-    <li><strong>Cloud:</strong> AWS (Basic)</li>
-  </ul>
-
-  <hr/>
-
-  <!-- Experience -->
-  <h2>Experience</h2>
-  <h3>Backend Developer – Company Name</h3>
-  <p><em>Jan 2022 – Present</em></p>
-  <ul>
-    <li>Developed REST APIs using Go and Python</li>
-    <li>Optimized SQL queries reducing API latency</li>
-    <li>Worked on production bug fixes and performance improvements</li>
-  </ul>
-
-  <hr/>
-
-  <!-- Projects -->
-  <h2>Projects</h2>
-  <h3>House Prediction System</h3>
-  <p>Go, MySQL</p>
-  <p>
-    Built a backend service for house prediction logic with optimized SQL queries.
-  </p>
-  <a href="https://github.com/yourgithub" target="_blank">GitHub Repo</a>
-
-  <hr/>
-
-  <!-- Education -->
-  <h2>Education</h2>
-  <p>Bachelor’s Degree – Your College Name</p>
-
-  <hr/>
-
-  <!-- Contact -->
-  <h2>Contact</h2>
-  <p>Email: yourname@email.com</p>
-  <p>
-    LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a><br/>
-    GitHub: <a href="https://github.com/yourgithub">github.com/yourgithub</a>
-  </p>
-
-</div>
-
 </body>
 </html>
