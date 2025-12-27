@@ -21,7 +21,7 @@
   --color-text-secondary: #94a3b8;
   --color-glass-bg: rgba(255, 255, 255, 0.05);
   --color-glass-border: rgba(255, 255, 255, 0.1);
-  
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -29,16 +29,16 @@
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
   --spacing-2xl: 4rem;
-  
+
   /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-  
+
   /* Border Radius */
   --radius-sm: 0.5rem;
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
-  
+
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-medium: 0.3s ease;
@@ -83,13 +83,27 @@ body {
 
 /* Twinkling Stars Animation */
 @keyframes twinkle {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 1; }
+
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 /* ============================================
@@ -130,6 +144,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -137,13 +152,33 @@ body {
 }
 
 /* Stagger animation delays */
-.glass-section:nth-child(1) { animation-delay: 0.1s; }
-.glass-section:nth-child(2) { animation-delay: 0.2s; }
-.glass-section:nth-child(3) { animation-delay: 0.3s; }
-.glass-section:nth-child(4) { animation-delay: 0.4s; }
-.glass-section:nth-child(5) { animation-delay: 0.5s; }
-.glass-section:nth-child(6) { animation-delay: 0.6s; }
-.glass-section:nth-child(7) { animation-delay: 0.7s; }
+.glass-section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.glass-section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.glass-section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.glass-section:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.glass-section:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.glass-section:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.glass-section:nth-child(7) {
+  animation-delay: 0.7s;
+}
 
 /* ============================================
    HEADER STYLES
@@ -168,8 +203,15 @@ header h1 {
 }
 
 @keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 header .subtitle {
@@ -368,148 +410,7 @@ ul li::before {
   font-weight: 600;
 }
 
-/* ============================================
-   TO-DO LIST COMPONENT
-   ============================================ */
-.todo-container {
-  margin-top: var(--spacing-md);
-}
 
-.todo-input-wrapper {
-  display: flex;
-  gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-md);
-}
-
-#todo-input {
-  flex: 1;
-  padding: 0.875rem 1.25rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid var(--color-glass-border);
-  border-radius: var(--radius-md);
-  color: var(--color-text-primary);
-  font-family: var(--font-primary);
-  font-size: 1rem;
-  transition: all var(--transition-medium);
-}
-
-#todo-input:focus {
-  outline: none;
-  border-color: var(--color-nebula-purple);
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-}
-
-#todo-input::placeholder {
-  color: var(--color-text-secondary);
-}
-
-#add-todo-btn {
-  padding: 0.875rem 1.75rem;
-  background: linear-gradient(135deg, var(--color-nebula-purple), var(--color-nebula-blue));
-  color: var(--color-star-white);
-  border: none;
-  border-radius: var(--radius-md);
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all var(--transition-medium);
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
-}
-
-#add-todo-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
-}
-
-#add-todo-btn:active {
-  transform: translateY(0);
-}
-
-#todo-list {
-  list-style: none;
-  padding: 0;
-}
-
-.todo-item {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-md);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--color-glass-border);
-  border-radius: var(--radius-md);
-  margin-bottom: var(--spacing-sm);
-  transition: all var(--transition-medium);
-  animation: slideIn 0.3s ease;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.todo-item:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: var(--color-nebula-purple);
-}
-
-.todo-item.completed {
-  opacity: 0.6;
-}
-
-.todo-item.completed .todo-text {
-  text-decoration: line-through;
-  color: var(--color-text-secondary);
-}
-
-.todo-checkbox {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  accent-color: var(--color-nebula-purple);
-}
-
-.todo-text {
-  flex: 1;
-  color: var(--color-text-primary);
-  font-size: 1rem;
-}
-
-.todo-text::before {
-  content: none;
-}
-
-.delete-btn {
-  padding: 0.5rem 1rem;
-  background: rgba(236, 72, 153, 0.2);
-  color: var(--color-nebula-pink);
-  border: 1px solid var(--color-nebula-pink);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  font-size: 0.875rem;
-  font-weight: 600;
-  transition: all var(--transition-fast);
-}
-
-.delete-btn:hover {
-  background: var(--color-nebula-pink);
-  color: var(--color-star-white);
-  transform: scale(1.05);
-}
-
-.empty-state {
-  text-align: center;
-  padding: var(--spacing-xl);
-  color: var(--color-text-secondary);
-  font-style: italic;
-}
 
 /* ============================================
    FOOTER
@@ -529,24 +430,18 @@ footer {
   .container {
     padding: var(--spacing-sm);
   }
-  
+
   .glass-section {
     padding: var(--spacing-md);
     margin-bottom: var(--spacing-md);
   }
-  
+
   header {
     padding: var(--spacing-lg) 0;
   }
-  
-  .todo-input-wrapper {
-    flex-direction: column;
-  }
-  
-  #add-todo-btn {
-    width: 100%;
-  }
-  
+
+
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -556,15 +451,8 @@ footer {
   h2 {
     font-size: 1.5rem;
   }
-  
-  .todo-item {
-    padding: var(--spacing-sm);
-  }
-  
-  .delete-btn {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
-  }
+
+
 }
 
 /* ============================================
