@@ -411,16 +411,57 @@ ul li::before {
 }
 
 
+/* ===========================
+   PROJECT ITEMS & TECH BADGES
+   =========================== */
+.project-item {
+  margin-bottom: 2rem;
+}
+
+.project-item:last-child {
+  margin-bottom: 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  /* Assuming --accent-color is defined elsewhere or will be */
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+  background: rgba(255, 215, 0, 0.15);
+  /* Example hover color, adjust as needed */
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+}
 
 /* ============================================
    FOOTER
    ============================================ */
 footer {
   text-align: center;
-  padding: var(--spacing-xl) 0;
+  padding: 2rem 0;
   color: var(--color-text-secondary);
+  /* Changed from --text-secondary to --color-text-secondary */
   font-size: 0.9rem;
-  margin-top: var(--spacing-2xl);
+  margin-top: 3rem;
+  /* Changed from var(--spacing-xl) and var(--spacing-2xl) */
 }
 
 /* ============================================
